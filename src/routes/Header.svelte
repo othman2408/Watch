@@ -11,22 +11,22 @@
 		<a href="/" class="c text-sm font-medium transition-colors hover:text-primary"> Home </a>
 
 		<a
-			href="/docs"
+			href="/movies"
 			class="c text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
 		>
-			Docs
+			Movies
 		</a>
 		<a
-			href="/download"
+			href="/tv-shows"
 			class="c text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
 		>
-			Download
+			TV-Shows
 		</a>
 		<a
-			href="/about"
+			href="/live"
 			class="c text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
 		>
-			About
+			Live
 		</a>
 	</nav>
 	<Button class="ml-auto">Login</Button>
