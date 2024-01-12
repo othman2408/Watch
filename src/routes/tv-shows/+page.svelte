@@ -3,4 +3,4 @@
 	export let data;
 </script>
 
-<h1>Docs</h1>
+<h1>Tv Shows</h1>

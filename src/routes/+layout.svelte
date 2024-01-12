@@ -7,7 +7,7 @@
 
 <Header />
 
-<main class="mt-16 flex w-8/12 px-6">
+<main class="mt-16 flex h-72 w-8/12 px-6">
 	<slot />
 </main>
 
@@ -15,7 +15,7 @@
 
 <style>
 	main {
-		background: rgba(244, 249, 254, 0.5);
+		background: rgba(232, 232, 232, 0.5);
 		-webkit-backdrop-filter: blur(20px);
 		backdrop-filter: blur(10px);
 	}
