@@ -1,16 +1,17 @@
 <script>
+	import '../app.pcss';
+	import './styles.css';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
-	import './styles.css';
 </script>
 
-<Header />
+<Header></Header>
 
 <main>
 	<slot />
 </main>
 
-<Footer />
+<Footer></Footer>
 
 <style>
 	main {
