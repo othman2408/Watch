@@ -1,6 +1,10 @@
 <script>
-	/** @type {import('./$types').PageData} */
-	export let data;
+	let person = {
+		test: 'othman',
+		age: 24
+	};
+
+	console.log(person['age']);
 </script>
 
 <h1>download</h1>
