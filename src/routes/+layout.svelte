@@ -5,19 +5,18 @@
 	import Header from './Header.svelte';
 </script>
 
-<Header></Header>
+<Header />
 
-<main>
+<main class="mt-16 flex w-8/12 px-6">
 	<slot />
 </main>
 
-<Footer></Footer>
+<Footer />
 
 <style>
 	main {
-		width: 80%;
-		background-color: #f0f0f0;
-		padding: 2rem;
-		margin-top: 2rem;
+		background: rgba(244, 249, 254, 0.5);
+		-webkit-backdrop-filter: blur(20px);
+		backdrop-filter: blur(10px);
 	}
 </style>
