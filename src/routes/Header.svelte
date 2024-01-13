@@ -1,9 +1,15 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+
 	import { cn } from '$lib/utils';
 	import { Button } from '$lib/components/ui/button';
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
+
+	const loginHandler = () => {
+		goto('/movies');
+	};
 </script>
 
 <div class="first-letter: mt-8 flex w-8/12 rounded-sm p-1 px-6">
@@ -29,7 +35,7 @@
 			Live
 		</a>
 	</nav>
-	<Button class="ml-auto">Login</Button>
+	<Button class="ml-auto" on:click={loginHandler}>Login</Button>
 </div>
 
 <style>

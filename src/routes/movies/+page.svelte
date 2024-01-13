@@ -1,1 +1,1 @@
-<h1>About</h1>
+<h1>Movies Section</h1>

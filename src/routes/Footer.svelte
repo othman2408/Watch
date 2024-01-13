@@ -1,19 +1,6 @@
-<footer>
+<footer class=" flex w-8/12 justify-center bg-slate-500 p-1 px-6 align-middle text-zinc-200">
 	<h1>Footer</h1>
 </footer>
 
 <style>
-	footer {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 80%;
-		height: 3rem;
-		border-radius: 0.2rem;
-		position: absolute;
-		bottom: 0;
-		background: rgba(244, 249, 254, 0.5);
-		-webkit-backdrop-filter: blur(10px);
-		backdrop-filter: blur(10px);
-	}
 </style>
