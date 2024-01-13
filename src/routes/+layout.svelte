@@ -1,8 +1,8 @@
 <script>
 	import '../app.pcss';
 	import './styles.css';
-	import Footer from './Footer.svelte';
-	import Header from './Header.svelte';
+	import Footer from '$lib/my-component/Footer.svelte';
+	import Header from '$lib/my-component/Header.svelte';
 </script>
 
 <Header />
