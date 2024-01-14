@@ -6,7 +6,7 @@
 
 <Card.Root>
 	<Card.Header>
-		<img class="h-auto max-h-60 w-full object-cover pb-2" {src} />
+		<img class="h-auto max-h-60 w-full object-cover pb-2" {src} alt="img" />
 		<Card.Title>{title}</Card.Title>
 		<Card.Description>{desc}</Card.Description>
 	</Card.Header>
