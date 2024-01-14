@@ -7,7 +7,7 @@
 
 <Header />
 
-<main class="my-8 flex w-8/12 rounded-sm px-6 py-8">
+<main class="align my-8 flex w-8/12 rounded-sm px-6 py-8 align-middle">
 	<slot />
 </main>
 

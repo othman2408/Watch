@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Separator } from '$lib/components/ui/separator';
 	import { goto } from '$app/navigation';
 
 	import { cn } from '$lib/utils';
@@ -14,8 +15,9 @@
 
 <div class="first-letter: mt-8 flex w-8/12 rounded-sm p-1 px-6">
 	<nav class={cn('flex items-center space-x-4 lg:space-x-6', className)}>
+		<img src="/logo-center.svg" alt="logo" class="w-20" />
+		<Separator orientation="vertical" />
 		<a href="/" class="c text-sm font-medium transition-colors hover:text-primary"> Home </a>
-
 		<a
 			href="/movies"
 			class="c text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
