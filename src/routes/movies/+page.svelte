@@ -1,5 +1,6 @@
 <script>
 	import Card from '../../lib/my-component/Card.svelte';
+
 	export let data;
 	// console.log(data);
 </script>
