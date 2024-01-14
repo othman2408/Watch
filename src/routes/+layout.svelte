@@ -7,7 +7,7 @@
 
 <Header />
 
-<main class="my-8 flex h-72 w-8/12 px-6">
+<main class="my-8 flex w-8/12 rounded-sm px-6 py-8">
 	<slot />
 </main>
 
@@ -15,8 +15,8 @@
 
 <style>
 	main {
-		background: rgba(156, 156, 156, 0.5);
-		-webkit-backdrop-filter: blur(20px);
-		backdrop-filter: blur(10px);
+		background: rgb(255 255 255 / 25%);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
 	}
 </style>
