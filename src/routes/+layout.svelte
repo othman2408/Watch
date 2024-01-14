@@ -14,9 +14,9 @@
 <Footer />
 
 <style>
-	/* main {
+	main {
 		background: rgb(255 255 255 / 25%);
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
-	} */
+	}
 </style>
