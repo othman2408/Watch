@@ -1,16 +1,19 @@
 <script>
-	import Cardo from './../../lib/my-component/Cardo.svelte';
-	import Card from '../../lib/my-component/Card.svelte';
+	import Card from '$lib/components/Card.svelte';
 
 	export let data;
-	// console.log(data);
 </script>
 
-<main>
+<main class="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
 	<h1 class="pb-5 text-center text-2xl font-bold">Movies</h1>
-	<div class="content grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+	<div class="-mx-4 flex flex-wrap justify-center gap-4">
 		{#each data.movies as movie}
-			<Cardo />
+			<Card
+				title={movie.title}
+				desc={movie.overview}
+				poster_path={movie.poster_path}
+				backdrop_path={movie.backdrop_path}
+			/>
 		{/each}
 	</div>
 </main>

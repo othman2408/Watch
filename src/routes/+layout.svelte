@@ -1,8 +1,8 @@
 <script>
 	import '../app.pcss';
 	import './styles.css';
-	import Footer from '$lib/my-component/Footer.svelte';
-	import Header from '$lib/my-component/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <Header />
@@ -14,9 +14,9 @@
 <Footer />
 
 <style>
-	main {
+	/* main {
 		background: rgb(255 255 255 / 25%);
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
-	}
+	} */
 </style>
