@@ -9,6 +9,7 @@
 	<div class="-mx-4 flex flex-wrap justify-center gap-4">
 		{#each data.movies as movie}
 			<Card
+				id={movie.id}
 				title={movie.title}
 				desc={movie.overview}
 				poster_path={movie.poster_path}

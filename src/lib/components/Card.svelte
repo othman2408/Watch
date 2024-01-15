@@ -1,9 +1,8 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
-	import { Info } from 'lucide-svelte';
 	import Separator from './ui/separator/separator.svelte';
-	export let title, poster_path, backdrop_path;
+	export let id, title, poster_path, backdrop_path;
 </script>
 
 <Card.Root
@@ -25,19 +24,15 @@
 				<Badge variant="outline" class="w-fit">Comedy</Badge>
 				<Badge variant="outline" class="w-fit">Comedy</Badge>
 			</div>
-
-			<button style="border: 1px solid #7b7b7b17;" class="btn w-fit rounded-full p-3"
-				><Info class="h-4 w-4" /></button
-			>
 		</div>
 	</Card.Header>
 	<!-- <Card.Content class="px-4 ">
 		<Card.Description>{desc}</Card.Description>
 	</Card.Content> -->
 	<Card.Footer class="flex justify-evenly px-4 font-bold text-gray-800">
-		<a href="/home">Watch</a>
+		<a href="/movies/{id}">View</a>
 		<Separator orientation="vertical" class="h-4" />
-		<a href="/home">Download</a>
+		<a href="/home">Watch</a>
 	</Card.Footer>
 </Card.Root>
 
