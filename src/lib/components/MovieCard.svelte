@@ -4,13 +4,13 @@
 	export let poster_path, title, overview, release_date, genre, name, runtime;
 </script>
 
-<main class="container mx-auto my-8 grid h-full grid-cols-1 gap-2 md:grid-cols-1 lg:grid-cols-3">
+<main class="container mx-auto my-8 grid grid-cols-1 gap-2 md:grid-cols-1 lg:grid-cols-3">
 	<!-- Movie Poster -->
 	<div class="md:col-span-1 lg:col-span-1">
 		<img
 			src="https://image.tmdb.org/t/p/original/{poster_path}"
 			alt="Movie Poster"
-			class="h-full w-full rounded-md object-cover shadow-lg"
+			class="h-full w-full rounded-md bg-auto bg-center bg-no-repeat object-cover shadow-lg"
 		/>
 	</div>
 

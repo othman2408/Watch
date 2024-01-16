@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
 	import MovieCard from '$lib/components/MovieCard.svelte';
 	const movieId = $page.params.movieId;
 
@@ -9,12 +10,16 @@
 	console.log(data.movie);
 </script>
 
-<MovieCard
-	{poster_path}
-	{title}
-	{overview}
-	{release_date}
-	genre={genres[0].name}
-	name={production_companies[0].name}
-	{runtime}
-/>
+<main class="column flex-col">
+	<Breadcrumb {title} />
+
+	<MovieCard
+		{poster_path}
+		{title}
+		{overview}
+		{release_date}
+		genre={genres[0].name}
+		name={production_companies[0].name}
+		{runtime}
+	/>
+</main>

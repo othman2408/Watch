@@ -9,7 +9,7 @@
 	style="background: rgb(255 255 255 / 25%);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);"
-	class="card sm:w-2/2 w-full p-0 md:w-1/3 lg:w-1/3 xl:w-3/12"
+	class="card sm:w-2/2 flex w-full flex-col p-0 md:w-1/3 lg:w-1/3 xl:w-3/12"
 >
 	<img
 		src={`https://image.tmdb.org/t/p/original/${poster_path}`}
@@ -27,9 +27,10 @@
 		</div>
 	</Card.Header>
 	<!-- <Card.Content class="px-4 ">
-		<Card.Description>{desc}</Card.Description>
+	  <Card.Description>{desc}</Card.Description>
 	</Card.Content> -->
-	<Card.Footer class="flex justify-evenly px-4 font-bold text-gray-800">
+	<div class="flex-grow"></div>
+	<Card.Footer class=" flex justify-evenly px-4 font-bold text-gray-800">
 		<a href="/movies/{id}">View</a>
 		<Separator orientation="vertical" class="h-4" />
 		<a href="/home">Watch</a>
