@@ -1,8 +1,13 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Card from '$lib/components/Card.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 
 	export let data;
+
+	const handlePageChange = (num) => {
+		goto(`/movies/${num}`);
+	};
 </script>
 
 <main class="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
@@ -10,6 +15,7 @@
 	<div class="-mx-4 flex flex-wrap justify-center gap-4">
 		{#each data.movies as movie}
 			<Card
+				movie_path={'movies/movie'}
 				id={movie.id}
 				title={movie.title}
 				desc={movie.overview}
@@ -19,6 +25,6 @@
 		{/each}
 	</div>
 	<div class="mt-14">
-		<Pagination />
+		<Pagination pageCount={5000} dataPerPage={10} {handlePageChange} />
 	</div>
 </main>

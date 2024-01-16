@@ -1,8 +1,9 @@
 <script lang="ts">
 	import * as Pagination from '$lib/components/ui/pagination';
+	export let pageCount, dataPerPage, handlePageChange;
 </script>
 
-<Pagination.Root count={100} perPage={10} let:pages let:currentPage>
+<Pagination.Root count={pageCount} perPage={dataPerPage} let:pages let:currentPage>
 	<Pagination.Content>
 		<Pagination.Item>
 			<Pagination.PrevButton />
@@ -14,7 +15,11 @@
 				</Pagination.Item>
 			{:else}
 				<Pagination.Item isVisible={currentPage == page.value}>
-					<Pagination.Link {page} isActive={currentPage == page.value}>
+					<Pagination.Link
+						{page}
+						isActive={currentPage == page.value}
+						on:click={handlePageChange(page.value)}
+					>
 						{page.value}
 					</Pagination.Link>
 				</Pagination.Item>

@@ -19,7 +19,7 @@
 		<Separator orientation="vertical" />
 		<a href="/" class="c text-sm font-medium transition-colors hover:text-primary"> Home </a>
 		<a
-			href="/movies"
+			href="/movies/1"
 			class="c text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
 		>
 			Movies

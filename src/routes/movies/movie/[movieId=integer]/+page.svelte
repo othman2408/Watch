@@ -7,7 +7,6 @@
 	export let data;
 	let { poster_path, title, overview, release_date, genres, production_companies, runtime } =
 		data.movie;
-	console.log(data.movie);
 </script>
 
 <main class="column flex-col">
