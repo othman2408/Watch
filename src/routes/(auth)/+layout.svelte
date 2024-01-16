@@ -29,3 +29,5 @@
 	<Tabs.Content value="register"><Register /></Tabs.Content>
 	<Tabs.Content value="login"><Login /></Tabs.Content>
 </Tabs.Root>
+
+<slot />

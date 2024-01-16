@@ -1,5 +1,6 @@
 <script>
 	import Card from '$lib/components/Card.svelte';
+	import Pagination from '$lib/components/Pagination.svelte';
 
 	export let data;
 </script>
@@ -16,5 +17,8 @@
 				backdrop_path={movie.backdrop_path}
 			/>
 		{/each}
+	</div>
+	<div class="mt-14">
+		<Pagination />
 	</div>
 </main>

@@ -60,7 +60,7 @@
 	.container {
 		background: rgb(255 255 255 / 25%);
 		border-radius: 10px;
-		border: 1px solid rgba(255, 255, 255, 0.18);
+		border: 1px solid rgb(0 0 0 / 5%);
 		padding: 1rem;
 	}
 </style>
