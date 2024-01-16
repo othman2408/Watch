@@ -9,7 +9,7 @@
 	export { className as class };
 
 	const loginHandler = () => {
-		goto('/movies');
+		goto('/login');
 	};
 </script>
 
