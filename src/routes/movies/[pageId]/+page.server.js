@@ -11,10 +11,14 @@ export const load = async ({ fetch, params }) => {
 		});
 	}
 
-	const res = await fetch(
+	const response = await fetch(
 		`https://api.themoviedb.org/3/movie/popular?language=en-US&page=${pageId}&api_key=${SECRET_API_KEY}`
 	);
-	const movies = await res.json();
+	const data = await response.json();
 
-	return movies;
+	return {
+		movies: data.results,
+		totalPages: data.total_pages,
+		totalResults: data.total_results
+	};
 };
