@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as Pagination from '$lib/components/ui/pagination';
-	export let pageCount, dataPerPage, handlePageChange;
+	export let pageCount, dataPerPage, handlePageChange, currentPage;
 </script>
 
 <Pagination.Root count={pageCount} perPage={dataPerPage} let:pages let:currentPage>

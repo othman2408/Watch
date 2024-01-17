@@ -7,7 +7,6 @@ export const GET = async ({ params }) => {
 	);
 
 	const data = await res.json();
-	console.log(data);
 
 	return new Response(JSON.stringify(data), { status: 200 });
 };

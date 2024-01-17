@@ -4,9 +4,10 @@
 	import Pagination from '$lib/components/Pagination.svelte';
 
 	export let data;
+	console.log(data.totalResults, data.totalPages);
 
-	const handlePageChange = (num) => {
-		goto(`/movies/${num}`);
+	const handlePageChange = (pageNo) => {
+		goto(`/movies/${pageNo}`);
 	};
 </script>
 
@@ -18,7 +19,6 @@
 				movie_path={'movies/movie'}
 				id={movie.id}
 				title={movie.title}
-				desc={movie.overview}
 				poster_path={movie.poster_path}
 				backdrop_path={movie.backdrop_path}
 			/>
