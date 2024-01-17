@@ -30,7 +30,7 @@
 
 <style>
 	footer {
-		background: rgb(255 255 255 / 28%);
+		background: rgb(255 255 255 / 15%);
 		border: 1px solid rgb(0 0 0 / 6%);
 	}
 </style>
