@@ -1,8 +1,5 @@
 <script>
-	import { page } from '$app/stores';
-	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
 	import MovieCard from '$lib/components/MovieCard.svelte';
-	const movieId = $page.params.movieId;
 
 	export let data;
 	let { poster_path, title, overview, release_date, genres, production_companies, runtime } =
@@ -10,8 +7,6 @@
 </script>
 
 <main class="column flex-col">
-	<Breadcrumb {title} />
-
 	<MovieCard
 		{poster_path}
 		{title}

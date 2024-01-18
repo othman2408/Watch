@@ -4,7 +4,7 @@
 	export let title;
 </script>
 
-<ol class="container ml-8 flex w-fit whitespace-nowrap" aria-label="Breadcrumb">
+<ol class="container float-start flex w-fit whitespace-nowrap" aria-label="Breadcrumb">
 	<li class="inline-flex items-center">
 		<a
 			class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none dark:focus:text-blue-500"
