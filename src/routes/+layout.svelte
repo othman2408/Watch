@@ -3,19 +3,6 @@
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import { onMount } from 'svelte';
-	import { invalidateAll } from '$app/navigation';
-	import { supabaseClient } from '$lib/supabase';
-
-	onMount(() => {
-		const {
-			data: { subscription }
-		} = supabaseClient.auth.onAuthStateChange(() => {
-			invalidateAll();
-		});
-
-		return subscription.unsubscribe();
-	});
 </script>
 
 <Header />
@@ -29,7 +16,7 @@
 <style>
 	/* main {
 		background: rgb(255 255 255 / 25%);
-		border-radius: 10px;
+		border-radius: 10px;	
 		border: 1px solid rgba(255, 255, 255, 0.18);
 	} */
 </style>

@@ -2,7 +2,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import Separator from './ui/separator/separator.svelte';
-	export let movie_path,id, title, poster_path, backdrop_path;
+	export let movie_path, id, title, poster_path, backdrop_path;
 </script>
 
 <Card.Root
