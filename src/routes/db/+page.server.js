@@ -1,17 +1,22 @@
 import { DBActions } from '$lib/DBActions';
+import { fail } from '@sveltejs/kit';
 
-const actions = new DBActions();
+const DB = new DBActions();
 
 export async function load() {
-	// const { data, error } = await supabase.from('users').select('*');
-	// if (error) {
-	// 	console.log(error.message);
-	// }
-	// return {
-	// 	users: data ?? []
-	// };
-
 	return {
-		users: await actions.getAllUsers()
+		users: await DB.getAllUsers()
 	};
 }
+
+export const actions = {
+	addUser: async ({ request }) => {
+		const formData = await request.formData();
+		const user = {
+			username: formData.get('username'),
+			email: formData.get('email'),
+			password: formData.get('password')
+		};
+		await DB.addUser(user);
+	}
+};

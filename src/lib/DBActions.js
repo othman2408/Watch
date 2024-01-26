@@ -9,5 +9,26 @@ export class DBActions {
 		return data || [];
 	}
 
-	async addUser() {}
+	async getUser(username) {
+		return await supabase.from('users').select('*').like('username', username).single();
+	}
+
+	async addUser(user) {
+		let checkUser = this.getUser(user.username);
+
+		if (checkUser != undefined) {
+			const { data, error } = await supabase
+				.from('users')
+				.insert([{ username: user.username, email: user.email, password: user.password }])
+				.select();
+
+			if (data) {
+				console.log(data);
+				return true;
+			}
+
+			console.dir(`${error.message} - ${error.hint}`);
+			return error;
+		}
+	}
 }

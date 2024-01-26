@@ -1,11 +1,11 @@
 <script>
+	import { enhance, SubmitFunction } from '$app/forms';
 	export let data;
-	console.log(data.users);
 </script>
 
 <main>
+	<h1>Data Base Data</h1>
 	<div>
-		<h1>Data Base Data</h1>
 		<ul>
 			{#each data.users as user}
 				<li>{user.email}</li>
@@ -14,21 +14,23 @@
 	</div>
 
 	<div>
-		<form action="POST">
-			<label for="name">
-				Name
-				<input type="text" name="name" id="name" />
+		<form method="POST" action="?/addUser" use:enhance>
+			<label for="username">
+				Username
+				<input type="text" name="username" id="name" />
 			</label>
 
-			<label for="user">
-				username
-				<input type="text" name="user" id="user" />
+			<label for="email">
+				Email
+				<input type="email" name="email" id="user" />
 			</label>
 
-			<label for="pass">
-				password
-				<input type="password" name="name" id="pass" />
+			<label for="password">
+				Password
+				<input type="password" name="password" id="pass" />
 			</label>
+
+			<button>ADD</button>
 		</form>
 	</div>
 </main>
@@ -50,5 +52,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+	}
+
+	button {
+		background-color: cornflowerblue;
 	}
 </style>
